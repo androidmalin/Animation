@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.malin.learning.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_room_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="23.0dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.malin.learning.view.ring.LiveRoomRingImageView
+            android:id="@+id/switch_room_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@mipmap/liveroom_ring" />
+
+        <TextView
+            android:id="@+id/ring_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="提醒"
+            android:textColor="@color/hostname_text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.malin.learning.view.loading.LoadingView
+        android:id="@+id/layout_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="开启提醒" />
+
+    <Button
+        android:id="@+id/btn_show_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+        android:text="正在加载..." />
+</RelativeLayout>
